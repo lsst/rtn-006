@@ -108,7 +108,7 @@ All of the components of this community engagement model described in \S~\ref{se
 For example, technical support issues pertaining to, e.g., account authentication (\textit{``Help, I forget my password"}) or access issues (\textit{``I?m getting a 504 Gateway Timeout when trying to log in to the RSP right now"}) would not be posted to \url{Community.lsst.org} (\S~\ref{ssec:mod_support}) -- a separate, RSP-related venue will be provided for such things.
 Issues related to the scientific applications of the LSST data products, such as \textit{?I?m trying to insert simulated galaxies into images and their measured fluxes look wonky?}, are the type of question that this community engagement model is being designed to serve.
 
-It is recognized that people might forget about or not recognize the different support resources for the different types of questions, and that is totally fine; either people will be politely redirected or the question can be passed between teams.
+The CET recognizes that people might forget about or not realize the different support resources for the different types of questions; either people will be politely redirected or the question can be passed between teams.
 
 
 \subsection{Communities to Engage}\label{ssec:intro_comms}
@@ -120,10 +120,10 @@ In presenting a model for community engagement, it is essential to understand th
 \item \textbf{Science community} refers specifically to the subset of the Rubin community doing scientific analyses with the LSST data products and services.
 \item \textbf{Science Collaboration members} are science community members who have joined one of the LSST Science Collaborations.
 \item \textbf{Rubin Observatory staff} are individuals who work for Rubin Observatory as part of the construction or operations teams. All staff are members of the Rubin community and are data rights holders. Any staff engaging in scientific analyses are part of the science community, and many staff are also Science Collaborations members.
-\item \textbf{Data rights holders} are individuals with the right to access, analyze, and publish work based on the Rubin Observatory proprietary data products and services (such as the Rubin Science Platform \citedsp{lse-319}) as described in the Rubin Data Policy document, \citeds{rdo-013}. 
+\item \textbf{Data rights holders} are individuals with the right to access, analyze, and publish work based on the Rubin Observatory proprietary data products and services (such as the RSP \citedsp{lse-319}) as described in the Rubin Data Policy document, \citeds{rdo-013}. 
 \end{itemize}
 
-Note that the definitions of the Rubin and the science communities are not restricted to data rights holders. 
+Note that the definitions of the Rubin and Science communities are not restricted to data rights holders. 
 Although most individuals working in these communities will be data rights holders, the CET recognizes that individuals without data rights may do science with post-proprietary data products \citedsp{dmtn-144}.
 The components of this engagement model have been designed to accommodate this, such as the open access to the resources such as documentation or \url{Community.lsst.org} (\S~\ref{sec:mod}).
 
@@ -131,7 +131,7 @@ In the Data Policy \citedsp{rdo-013}, the terms "LSST user" and "user" specifica
 However, in this document the term "user" does not necessarily mean a data rights holder, and the term "user" is used more generically as users of services.
 For example, users of \url{Community.lsst.org} (does not require data rights), and users of the RSP (does require data rights).
 
-In addition, the design of this community engagement model must accommodate the fact that scientists are members of many other types of intersectional research communities such as career stage; institutional type; research methodologies (e.g., experimental, theoretical); messenger type or wavelength regime; location and language; scientific interests; and so on.
+In addition, the design of this community engagement model accommodates the fact that scientists are members of many other types of intersectional research communities such as career stage; institutional type; research methodologies (e.g., experimental, theoretical); messenger type or wavelength regime; location and language; scientific interests; and so on.
 
 
 \subsubsection{LSST Science Collaborations}\label{sssec:intro_comms_scicoll}
@@ -159,18 +159,24 @@ This section lists and describes the CET's planned, in-development, and in-progr
 The CET will create and maintain the contents of documentation and resource (educational) materials that are primarily community-facing, such as:
 \begin{itemize}
 \item the Data Products Definitions Document \citedsp{lse-163}
-\item manuals for the Rubin Science Platform aspects
+\item manuals for the RSP aspects (Portal, Notebook, and API)
 \item tutorials and demonstrations (e.g., Jupyter notebooks, database query examples)
 \item content for scientists in the Rubin Observatory website
 \item Rubin Tech Notes (RTN; such as this one)
 \end{itemize}
 
-The CET will interface with the other Rubin departments to ensure that documentation is complete and kept up-to-date.
-\textcolor{red}{Resources that are also used internally, such as source code documentation for the LSST Science Pipelines, would be created by, e.g., the Data Production team.} 
+Community-facing documentation, created by the CET, will focus on the user.
+Documentation will seek to quickly answer user questions while providing adequate depth of technical knowledge.
+Diversity is a major goal of the Rubin Science Project and CET documentation will factor in the needs of all users by ensuring written materials are accurate, complete, and appropriate for the audience for which it is intended.
+Understanding what experienced and non-experienced users need from documentation will drive the depth of technical knowledge included in the resource materials and the type of documents created.
+Soliciting feedback from users will help identify areas where resources should be created or updated.
 
 In alignment with the CET's engagement strategies (\S~\ref{ssec:intro_strat}), all documentation and materials will be openly available whenever possible (i.e., unless it contains proprietary data and should not be shared as specified by the Data Policy, \citeds{rdo-013}), and advanced-level materials should reference supporting materials to enable use by non-experts.
 
 In keeping with the guiding principle (\S~\ref{ssec:intro_strat}) of enabling users to contribute, the CET will develop infrastructure to provide ways for user-generated documentation and resource materials to be shared.
+
+The CET will interface with the other Rubin departments to ensure that documentation is complete and kept up-to-date.
+\textcolor{red}{Resources that are also used internally, such as source code documentation for the LSST Science Pipelines, would be created by, e.g., the Data Production team.} 
 
 
 \subsection{Scalable and Sustainable Support Infrastructure}\label{ssec:mod_support}
@@ -180,8 +186,10 @@ It will be impossible for Rubin Observatory staff to answer all individual quest
 
 Instead, the CET is building an online community to provide scientists with the ability to crowd-source solutions from a deep reservoir of collected expertise, and the CET will continue to nurture this community throughout operations.
 
-The open-source Discourse platform has been adopted for this online community: \url{Community.lsst.org}.
-This platform has several advantages in serving the Rubin community:
+The open-source Discourse platform was used by the construction-era Data Management team to build the Rubin Observatory Community Forum, \url{Community.lsst.org}.
+Technical maintenance of the forum will continue to be provided by the Data Production team in the operations-era. 
+
+The Discourse platform has several advantages, as originally outlined in \citeds{SQR-001}:
 \begin{itemize}
 \item native to the web (linkable; searchable; markdown format)
 \item prioritizes forum user experience (threading; liking; notifications)
@@ -198,7 +206,7 @@ However, Slack will not be used as a venue for Q\&A or support for science, as i
 
 The CET recognizes that modes for private Q\&A and issue reporting regarding sensitive scientific topics or proprietary data will also need to be supported.
 The CET is currently looking into how to offer confidential support via the Community Forum.
-As a reminder, a different channel will be provided for technical assistance, such as questions about account services and authentication (\S~\ref{ssec:intro_tech}).
+As a reminder, a different channel will be provided for technical assistance, such as questions about RSP account services and authentication (\S~\ref{ssec:intro_tech}).
 
 The CET recognizes that some of the Discourse functionality (such as account trust levels, badges, and tags) are not yet well understood by forum participants, and that some reorganization of the categories could improve the forum user experience.
 The CET is currently reviewing existing functionality and planning upgrades to this service.
@@ -210,10 +218,10 @@ Interacting live, virtually or face-to-face, with scientists using the Rubin Obs
 
 Although it is not always possible to reach a large audience with live interactions, targeted workshops to train scientists (including students) working with LSST data could be used to seed participation within the communities and groups mentioned in \S~\ref{ssec:intro_comms}.
 
-This approach of seeding engagement with a limited number of participants in some interactive event has being taken with two initiatives occurring during pre-operations, at or before the time of Version 1 of this document: the Stack Club Course\footnote{For more information about the Stack Club see \url{https://github.com/LSSTScienceCollaborations/StackClub} and about its Course see \url{https://github.com/LSSTScienceCollaborations/StackClubCourse}.} and community participation in Data Preview 0\footnote{For more information about Data Preview 0 see \url{ls.st/clo4618}.}.
+This approach of seeding engagement with a limited number of participants in an interactive event has being taken with two initiatives occurring during pre-operations, at or before the time of Version 1 of this document: the Stack Club Course\footnote{For more information about the Stack Club see \url{https://github.com/LSSTScienceCollaborations/StackClub} and about its Course see \url{https://github.com/LSSTScienceCollaborations/StackClubCourse}.} and community participation in Data Preview 0\footnote{For more information about Data Preview 0 see \url{ls.st/clo4618}.}.
 In both cases, a diversity-based participant selection process was implemented, and the CET intends to further refine such processes for future interactive events. 
 
-The following list contains some examples of how the CET will interact with the science community.
+The following list contains some examples of how the CET might interact with the science community.
 \begin{itemize}
 \item run topical workshops, sprints, hackathons, etc. in support of emergent science needs
 \item attend conferences and meetings to promote the use of Rubin Observatory data, to interact with scientists using Rubin data, and to stay up-to-date with scientific progress
@@ -224,11 +232,11 @@ The following list contains some examples of how the CET will interact with the 
 \end{itemize}
 
 For example, at the time of Version 1 of this document, the CET had helped to run the virtual Project and Community Workshop in August 2020 (e.g., participating in the Science Organizing Committee); conducted a series of open virtual drop-in sessions about community engagement as part of the preparation of this document; and developed materials for and helped to staff the Rubin Observatory booth at the winter meeting of the American Astronomical Society in January 2021. 
-\textcolor{red}{MLG double check WBS:} Future topical workshops to address emergent science needs in the community could be similar to past workshops run successfully by the Data Management team about community alert brokers and image processing algorithms. 
+Future topical workshops to address emergent science needs in the community might be similar to past workshops run successfully by the Data Management team about community alert brokers and image processing algorithms. 
 
 The CET anticipates that its members could become highly visible as ``Rubin insiders" who receive invitations to visit or to speak at institutions as a Rubin Observatory or CET representative, and that it may be wealthier institutions that are able to fund these visits.
 In the spirit of the engagement strategies in \S~\ref{ssec:intro_strat}, the CET will develop policies to ensure that diversity, equity, and inclusion are maintained for the limited resources available for face-to-face interactions. 
-Examples of this include: seeking funding to support CET speaking engagements at institutions with smaller research budgets, prioritizing virtual talks and posting the recordings, and/or helping to identify other suitable speakers among Rubin staff and the LSST Science Collaborations.
+Examples of this include: prioritizing invitations from institutions or conferences that are funding access to the talk or meeting for scientists from small or underserved institutions; prioritizing virtual talks and posting the recordings; and/or helping to identify other suitable speakers among Rubin staff and the LSST Science Collaborations.
 
 
 \subsection{Interfaces Within the Rubin Community}\label{ssec:mod_interface}
@@ -239,41 +247,40 @@ This is a very brief overview describing some of these internal interfaces.
 \item Rubin System Performance (RPF): System Engineering (SE), Survey Scheduling (SS), and Verification and Validation (VV) -- regular RPF leadership team meetings, collaborative work organized and assigned in Jira\footnote{Jira is a software package developed by Atlassian, used internally by Rubin Observatory for issue tracking and work management.}.
 \item Rubin Observatory Operations (ROO), Rubin Data Production (RDP) -- topical communications to solve problems; collaborative work organized and assigned in Jira.
 \item Rubin Education and Public Outreach (REP): regular collaboration, especially regarding citizen science projects.
-\item Rubin Science Platform (RSP) developers: deliver feedback from Users Committee and User Acceptance Testing to guide development; help to communicate changes and updates to the science community.
+\item RSP developers: deliver feedback from Users Committee and User Acceptance Testing to guide development; help to communicate changes and updates to the science community.
 \item Communications team: regular discussions to generate and maintain website contents, advertise initiatives and circulate announcements, co-organize the annual Rubin Project and Community Workshops, and coordinate presence at national conferences.
 \item Director's Office -- keep apprised of progress, seek advisement as needed, incorporate feedback.
 \item Science Advisory Committee (SAC) -- attend meetings when possible, keep apprised of progress and seek advisement as needed, incorporate suggestions into CET work.
 \end{itemize}
 
-The CET will also interface with groups that extend beyond, or are independent of, Rubin Observatory, such as:
+The CET will also interface with groups that extend beyond, or are independent of, Rubin Observatory.
+As with the above, the following list is meant to be demonstrative, not exhaustive.
 \begin{itemize}
-\item LSST Science Collaborations -- regular communications with the coordinator and chairs to keep them apprised of CET initiatives; keep apprised of open issues in the resolution process and opportunities to provide input; facilitate the liaison program (\S~\ref{sssec:mod_interface_SCliaison}).
+\item LSST Science Collaborations -- regular communications with the coordinator and chairs to keep them apprised of CET initiatives; keep apprised of open issues in the resolution process and opportunities to provide input; work together on common goals and joint initiatives (e.g., Data Previews, Research Inclusion); facilitate the liaison program (\S~\ref{sssec:mod_interface_SCliaison}).
 \item In-Kind Contributors: assist with the ingestion of deliverables into the Rubin system.
-\item NOIRLab: share resources for common engagement goals.
-\item LSSTC: maintain contact; shared goal of enhancing scientists' ability to secure funding.
+\item NOIRLab: regular contact with the Communications team (e.g., for website contents), the DataLab team (e.g., for shared resource materials or initiatives like the Data Previews), and the Community Science Data Center (CSDC) to share resources for common engagement goals, especially related to Research Inclusion initiatives.
+\item LSSTC: maintain communications (e.g., present at board meetings when requested); collaborate on the shared goal of enhancing scientists' ability to secure funding.
 \end{itemize}
-
-\textcolor{red}{Re. the NOIRLab interface, the above seems a very inadequate description; either this interface will be so integral we need not list it or so multi-faceted it should be its own paragraph. Ask LPG for guidance.}
 
 
 \subsubsection{Science Collaboration Liaison Program}\label{sssec:mod_interface_SCliaison}
 
-The CET will facilitate Rubin Observatory staff -- likely including several or all CET members -- to serve as ``liaisons" to each of the Science Collaborations during Operations. 
+The CET will facilitate Rubin Observatory staff -- likely including several or all CET members -- to serve as ``liaisons" to each of the LSST Science Collaborations during Operations. 
 During construction, this program is being administered by the Data Management System Science Team (DM-SST).
 
-The CET will work with the Science Collaborations to define the liaison's role, responsibilities, and term (examples below), and to set up a process to match Rubin staff with appropriate Science Collaborations.
+The CET will work with the LSST Science Collaborations to define the liaison's role, responsibilities, and term (examples below), and to set up a process to match Rubin staff with appropriate LSST Science Collaborations.
 The CET will work with the managers in the Rubin departments to ensure that the work done by liaisons is tracked and accounted for in their hours (or Jira story points). 
 
 Preliminarily, a Science Collaboration Liaison might have the following qualities:
 \begin{itemize}
-\item scientific expertise that matches the Science Collaboration
-\item detailed knowledge about the Rubin data products, survey strategy, etc. 
-\item able to provide high-level scientific guidance 
+\item has scientific expertise that matches the Science Collaboration
+\item has detailed knowledge about the Rubin data products, survey strategy, etc. 
+\item is able to provide high-level scientific guidance 
 \end{itemize}
 
 Preliminarily, a draft set of responsibilities for liaisons might be:
 \begin{itemize}
-\item engage in regular interactions with the Science Collaboration
+\item engage in regular interactions with the Collaboration
 \item attend relevant meetings when possible (e.g., biweekly or monthly all-hands)
 \item respond to mentions in the Collaboration's forum category or Slack channel
 \item provide timely responses to questions from the Collaboration's chair(s)
@@ -290,7 +297,7 @@ Preliminarily, a draft set of responsibilities for liaisons might be:
 
 \subsection{Coordinating Expertise}\label{ssec:mod_coord}
 
-Coordinating expertise within the Rubin community will be an essential component of community engagement and support for science.
+Coordinating expertise within the Rubin community, through the interfaces listed in \S~\ref{ssec:mod_interface}, will be an essential component of community engagement and support for science.
 
 The CET envisions coordinating expertise on both an \textit{emergent, as-needed} basis to meet problems or opportunities as they arise, and on an \textit{consistent, periodic} basis to prevent problems or identify opportunities well in advance.
 
@@ -301,17 +308,18 @@ The CET will also facilitate the Users Committee (\S~\ref{sssec:mod_coord_uc}) a
 \subsubsection{Issue Resolution}\label{sssec:mod_coord_res}
 
 It is a certainty that questions about and problems with the Rubin Observatory data products and services will arise for which an answer or solution does not already exist or is not easy to derive. 
-In these cases, the CET could assist with the issue-resolution process by coordinating expertise within the Rubin community and shepherding the issue towards a conclusion.
+In these cases, the CET would assist with the issue-resolution process by coordinating expertise within the Rubin community and shepherding the issue towards a conclusion.
 The CET would also take responsibility for defining the process to report issues, and ensuring that it is equally accessible to all members of the science community, and that the prioritization and resolution process is as transparent as possible.
 
 However, it should be noted that the CET would not \textit{have to} be involved in all issue resolution processes; that situation could impose an unnecessary bottleneck.
 As a specific example, a Science Collaboration liaison (\S~\ref{sssec:mod_interface_SCliaison}) who works in the Rubin Data Production department could identify an issue, discuss with their manager, instantiate a Jira ticket, and do work to resolve the issue.
-If resolving the issue does not require community input, and if the resolution does not create a major change to a data product or service that would need to be announced, then there might be no need to involve the CET in the process.
+If resolving the issue does not require community input, and if the resolution does not create a major change to a data product or service that would need to be widely announced, then there might be no need to involve the CET in the process.
+In these cases, the CET encourages all parties to use of the Community forum to discuss and report resolved issues (\S~\ref{ssec:mod_support}).
 
 The CET is assembling use-cases that envision \textit{specific} types of issues and their resolution process in \citeds{rtn-002}, to be ingested in to a model-based system engineering framework in order to more thoroughly identify needed components and interfaces of this community engagement model.
 As examples, \citeds{rtn-002} describes the workflow for issues in which a scientist identifies a new parameter for which detection efficiencies should be calculated in the LSST science pipelines, in which a camera fault requires modification of the alert production pipeline and rapid communication with scientists, and in which an RSP user encounters difficulties with large queries. 
 
-For a generic issue resolution process that does involve the CET, the workflow could look like:
+The following list is an example workflow for a generic issue resolution process that involves the CET.
 \begin{enumerate}
 \item A scientific risk, problem, or opportunity is identified by, or brought to the attention of, the CET. Its origin could be from the science community or from Rubin staff.
 \item The CET creates an internal Jira Issue Ticket assigned to the CET member with relevant expertise and adds relevant watchers (e.g., from Data Production). A priority and a deadline are assigned. 
@@ -323,7 +331,7 @@ For a generic issue resolution process that does involve the CET, the workflow c
 
 \subsubsection{Federating User-Generated Data Products or Algorithms}\label{sssec:mod_coord_ug}
 
-Rubin Observatory anticipates that the combined expertise of the science community will result in user-generated data products (e.g., value-added catalogs) or software (e.g., algorithms) that should be federated with or implemented into the Rubin system.
+During Rubin Observatory operations, the combined expertise of the science community will result in user-generated data products (e.g., value-added catalogs) or software (e.g., algorithms) that should be federated with or implemented into the Rubin system.
 
 The CET will work with the Rubin Data Production department to develop policies and methods to identify such opportunities and to provide support during the federation process.
 
@@ -332,18 +340,18 @@ One example of this kind of process to enable the science community to contribut
 
 \subsubsection{Users Committee}\label{sssec:mod_coord_uc}
 
-The Users Committee -- a sub-committee of the Science Advisory Committee (SAC) -- will advise the Lead Community Scientist and the Director on the usability of LSST data products and services, and especially the Rubin Science Platform (RSP), and advocate for science-driven improvements and changes to them.
+The Users Committee -- a sub-committee of the Science Advisory Committee (SAC) -- will be charged with advising the Lead Community Scientist and the Rubin Observatory Director on the usability of LSST data products and services, especially the RSP, and advocate for science-driven improvements and changes to them.
 
 As of Version 1 of this document, the charge for the Users Committee was being drafted by the SAC.
 Membership appointments to the Users Committee would be made by the Rubin Observatory Director under advisement from the SAC.
-Members will be data rights holders who use the RSP, and will represent the broad diversity of the science community, including individuals from underrepresented groups in astronomy and underserved institutions.
+Members will be data rights holders who use the RSP, and will represent the broad diversity of the global Rubin science community, including individuals from underrepresented groups in astronomy and underserved institutions.
 The CET will set up the Users Committee's communications infrastructure and meetings, will ensure that their biannual reports are delivered to the Director, and will generate internal Jira tickets to, e.g., resolve issues or request new features, as needed (\S~\ref{sssec:mod_coord_res}).
 The degree to which the Users Committee participates in User Acceptance Testing (UAT; \S~\ref{ssec:mod_uat}) remains to be determined.
 
 
 \subsubsection{Resource Allocation Committee}\label{sssec:mod_coord_rac}
 
-Rubin Observatory anticipates that, during Operations, some individuals or groups of RSP users will require storage and/or computational processing resources in excess of the basic quota allocated to all accounts.
+During Rubin Observatory operations, some individuals or groups of RSP users might require storage and/or computational processing resources in excess of the basic quota allocated to all accounts.
 If so, the CET will set up and facilitate the Resource Allocation Committee (RAC).
 The RAC would be analogous to a Time Allocation Committee (TAC) for a telescope, but in this case the limited resource would be compute cycles, disk space for storage, and potentially significantly large bulk data downloads.
 The RAC would consider the scientific justification for increases to basic quota for RSP users and be advisory to the Operations Director.
@@ -360,28 +368,25 @@ As of Version 1 of this document, there are several other components of this com
 
 \subsubsection{Proactive Strategies for Diversity, Equity, and Inclusion}\label{sssec:mod_dev_proact}
 
-Rubin Observatory community engagement strategies prioritize diversity, equity, and inclusion (DEI) as guiding principles (\S~\ref{ssec:intro_strat}) for all of the model components in this section.
+The Rubin Observatory community engagement strategies prioritize diversity, equity, and inclusion (DEI) as guiding principles (\S~\ref{ssec:intro_strat}) for all of the model components in this section.
 
 The CET is also developing more specific, proactive DEI strategies, many in collaboration with the other groups with which the CET interfaces (\S~\ref{ssec:mod_interface}), especially the LSST Science Collaborations, the Rubin Observatory Operations Executive team, NOIRLab, and the LSST Corporation.
 Some of these strategies are being developed and tested in conjunction with Data Preview 0 \citedsp{rtn-004}.
 
-The CET acknowledges that these strategies were also raised as issues that are very important to the science community during the CET's virtual open discussion series on community engagement in late 2020.
-
-Future versions of this community engagement model will feature more fully developed descriptions of these proactive, DEI-driven engagement strategies.
-
 \begin{itemize}
-\item building a self-supporting community of researchers at small institutions
-\item establishing research partnerships with scientists at underserved institutions
-\item prioritizing participation from individuals who self-identify with underrepresented groups in astronomy
-\item collecting and evaluating data about RSP users (and co-authors of Rubin-related journal articles) to understand which communities are accessing the data, and using this to inform DEI efforts
+\item helping to formulate and implement Rubin-wide policies for research inclusion
+\item helping to build research partnerships with scientists at small and underserved US institutions
+\item prioritizing and facilitating participation from individuals who self-identify with underrepresented groups in astronomy
+\item collecting and evaluating data about RSP users (and co-authors of Rubin-related journal articles) to understand which communities are accessing the LSST data products, and using this to inform further proactive DEI efforts
 \end{itemize}
+
+The CET acknowledges that DEI-focused strategies for engagement were also raised as issues that are very important to the science community during the CET's virtual open discussion series on community engagement in late 2020.
+Future versions of this community engagement model will feature more fully developed descriptions of these proactive, DEI-driven engagement strategies.
 
 
 \subsubsection{User Acceptance Testing of the RSP}\label{sssec:mod_dev_uat}
 
-\textcolor{red}{This is new, LPG should review.}
-
-The CET will conduct User Acceptance Testing (UAT) of the Rubin Science Platform and associated community-facing services at regular intervals, such as prior to major updates to the RSP, or before an annual Data Release.
+The CET will conduct User Acceptance Testing (UAT) of the RSP and associated community-facing services at regular intervals, such as prior to major updates to the RSP, or before an annual Data Release.
 
 The components and workflow for the UAT process have yet to be defined, but might include:
 \begin{itemize}
@@ -393,7 +398,7 @@ The components and workflow for the UAT process have yet to be defined, but migh
 
 \subsubsection{Citizen Science Methodologies}\label{sssec:mod_dev_citizen}
 
-Rubin Observatory anticipates that -- given the unique size and complexity of the LSST data set -- there will be certain scientific results that are only obtainable via citizen science methodologies.
+Given the unique size and complexity of the LSST data set there will be certain scientific results that are only obtainable via citizen science methodologies.
 The CET will help scientists identify and prepare LSST data and documentation for citizen science programs, and will coordinate with the EPO department and Zooniverse to help ensure that the data are installed and the outputs will meet the program's science goals.
 
 The CET's activities related to citizen science are still in the early stages of development.
@@ -410,28 +415,24 @@ The following is a very brief summary of the proposed work packages and staffing
 
 \subsection{Proposed Work Breakdown Structure}\label{ssec:comp_wbs}
 
-As of Version 1 of this document, these are the five proposed components of the CET's work package.
+As of Version 1 of this document, these are the five proposed components of the CET's work breakdown structure (WBS) packages.
 
 \begin{enumerate}
 \item \textbf{Coordinate Support for Science:} curate the community forum, guide scientists to help each other find solutions, identify emergent issues, and coordinate investigations to resolve them.
-\item \textbf{Rubin Science Platform User Acceptance Testing (UAT):} Conduct UAT campaigns in coordination with the Users Committee prior to major updates, and pass along reports to the appropriate internal departments and follow-up on any issues.
+\item \textbf{RSP User Acceptance Testing (UAT):} Conduct UAT campaigns in coordination with the Users Committee prior to major updates, and pass along reports to the appropriate internal departments and follow-up on any issues.
 \item \textbf{Scientific Documentation:} oversee the contents and delivery of community-facing scientific documentation related to the LSST data products and software. 
 \item \textbf{Interact with the Science Community:} promote the understanding and use of Rubin Observatory data products and software at meetings, engage in regular interactions with scientists in the community forum, and facilitate the Science Collaboration liaison program and the Users Committee.
 \item \textbf{User-Generated Data Products:} review and guide requests to federate user-generated algorithms and data products, support scientists to generate data products for citizen science programs, and facilitate the Resource Allocation Committee.
 \end{enumerate}
 
-As of Version 1 there is, obviously, not a one-to-one match between the five work packages below and the model components described in the six subsections of \S~\ref{sec:mod}.
-However, all components are represented in the work packages, meaning that the CET is scoped for all the listed components.
+As of Version 1 of this document there is not a one-to-one match between the five work packages above and the model components described in the six subsections of \S~\ref{sec:mod}, however, all components are represented in the work packages (i.e., the CET is scoped for all the listed components).
+
 
 \subsection{Proposed Staffing Profile}\label{ssec:comp_staff}
 
-As of Version 1 of this document, the proposed CET staffing profile would ramp up to 10.5 full-time equivalent (FTE) positions by the start of Operations.
-At the time of Version 1 of this document, the CET was staffed at 3.25 FTE.
-
-In Operations, CET staff will include the team lead (1 FTE), two documentation specialists (1 FTE), several community scientists covering the main LSST science pillars (7 FTE), and two citizen-science related positions (1.5 FTE). 
+As of Version 1 of this document, the proposed CET staffing profile would ramp up to 10.5 full-time equivalent (FTE) positions by the start of Operations, and in 2021 the CET was staffed at 3.25 FTE. 
+This proposed staffing profile in Operations would include the team lead (1 FTE), two documentation specialists (1 FTE), several community scientists covering the main LSST science pillars (7 FTE), and two citizen-science related positions (1.5 FTE). 
 The source of these appointments will come from NOIRLab, DOE, and International Programs contributions.
-
-
 
 \appendix
 % Include all the relevant bib files.
