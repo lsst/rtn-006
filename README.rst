@@ -3,14 +3,14 @@
 .. image:: https://github.com/rubin-observatory/rtn-006/workflows/CI/badge.svg
    :target: https://github.com/rubin-observatory/rtn-006/actions/
 
-##########################
-Community Engagement Model
-##########################
+###########################
+Model for Community Science
+###########################
 
 RTN-006
 =======
 
-A model for community engagement in science with the Rubin Observatory.
+A model for community science with the Rubin Observatory.
 
 Links
 =====
