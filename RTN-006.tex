@@ -18,7 +18,7 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Melissa L. Graham, Christina L. Adair, Jim Annis, Jeff Carlin, Robert de~Peyster, Alex Drlica-Wagner, Leanne P. Guy, and Greg Madejski
+Melissa L. Graham, Christina L. Adair, Jim Annis, Jeff Carlin, Robert de~Peyster, Alex Drlica-Wagner, Leanne P. Guy, Greg Madejski, and Andr\'es A. Plazas Malag\'on
 }
 
 \setDocRef{RTN-006}
@@ -40,6 +40,7 @@ A preliminary model for community science with the Rubin Observatory Legacy Surv
 \setDocChangeRecord{%
   \addtohist{1}{2021-01-31}{For milestone L3-CE-0020 "Develop a first model for community engagement for DP0.1".}{Melissa Graham}
   \addtohist{1.1}{2023-02-22}{Update name change to Community Science.}{Melissa Graham}
+  \addtohist{1.2}{2023-10-31}{Rename User Acceptance Testing to Science Validation of the RSP.}{Andr\'es A. Plazas Malag\'on}
 }
 
 \begin{document}
@@ -345,7 +346,7 @@ As of Version 1 of this document, the charge for the Users Committee was being d
 Membership appointments to the Users Committee would be made by the Rubin Observatory Director under advisement from the SAC.
 Members will be data rights holders who use the RSP, and will represent the broad diversity of the global Rubin science community, including individuals from underrepresented groups in astronomy and underserved institutions.
 The CST will set up the Users Committee's communications infrastructure and meetings, will ensure that their biannual reports are delivered to the Director, and will generate internal Jira tickets to, e.g., resolve issues or request new features, as needed (\S~\ref{sssec:mod_coord_res}).
-The degree to which the Users Committee participates in User Acceptance Testing (UAT; \S~\ref{sssec:mod_dev_uat}) remains to be determined.
+The degree to which the Users Committee participates in Science Validation of the RSP (\S~\ref{sssec:mod_dev_sv}) remains to be determined.
 
 
 \subsubsection{Resource Allocation Committee}\label{sssec:mod_coord_rac}
@@ -383,15 +384,21 @@ The CST acknowledges that DEI-focused strategies were also raised as issues that
 Future versions of this model for community science will feature more fully developed descriptions of these proactive, DEI-driven strategies.
 
 
-\subsubsection{User Acceptance Testing of the RSP}\label{sssec:mod_dev_uat}
+\subsubsection{Science Validation of the RSP}\label{sssec:mod_dev_sv}
 
-The CST will conduct User Acceptance Testing (UAT) of the RSP and associated community-facing services at regular intervals, such as prior to major updates to the RSP, or before an annual Data Release.
+The CST will conduct Science Validation of the RSP and associated community-facing services at regular intervals.
+Examples include prior to major updates to the RSP or before an annual Data Release.
+The goal is to create, test, and execute a process to scientifically validate the RSP.
+This process should be designed to answer questions about the RSP's functionality and usability.
+Specifically, the validation process will aim to determine whether the RSP meets the scientific needs of its users, if the necessary tools exist, if users are able to perform scientific analyses in the RSP, and if the interface is inclusive of all users and potential users while being intuitive to use with minimal instruction.
+An understanding the diversity of Rubin users and RSP use-cases is key to developing the process for science validation of the RSP.
 
-The components and workflow for the UAT process have yet to be defined, but might include:
+The components and workflow for the RSP science validation process have yet to be defined, but might include:
 \begin{itemize}
-\item coordinating with the Users Committee (\S~\ref{sssec:mod_coord_uc}) to include RSP users from the community in UAT campaigns,
+\item coordinating with the Users Committee (\S~\ref{sssec:mod_coord_uc}) to include RSP users from the community in RSP science validation campaigns,
+\item contracting with prosessional user experience (UX) and user interface (UI) experts on accessibility,
 \item reporting issues and coordinating with Rubin Observatory teams to resolve them, and
-\item producing an acceptance test report to the Rubin Observatory product owners.
+\item producing a science validation report to the Rubin Observatory product owners.
 \end{itemize}
 
 
@@ -418,7 +425,7 @@ As of Version 1 of this document, these are the five proposed components of the 
 
 \begin{enumerate}
 \item \textbf{Coordinate Support for Science:} curate the community forum, guide scientists to help each other find solutions, identify emergent issues, and coordinate investigations to resolve them.
-\item \textbf{RSP User Acceptance Testing (UAT):} Conduct UAT campaigns in coordination with the Users Committee prior to major updates, report to the Rubin Observatory product owners and appropriate internal departments, and follow-up on any issues.
+\item \textbf{Science Validation of the RSP:} Conduct RSP science validation campaigns in coordination with the Users Committee prior to major updates, report to the Rubin Observatory product owners and appropriate internal departments, and follow-up on any issues.
 \item \textbf{Scientific Documentation:} oversee the contents and delivery of community-facing scientific documentation related to the LSST data products and software. 
 \item \textbf{Interact with the Science Community:} promote the understanding and use of Rubin Observatory data products and software at meetings, engage in regular interactions with scientists in the community forum, and facilitate the Science Collaboration liaison program and the Users Committee.
 \item \textbf{User-Generated Data Products:} review and guide requests to federate user-generated algorithms and data products, support scientists to generate data products for citizen science programs, and facilitate the Resource Allocation Committee.
