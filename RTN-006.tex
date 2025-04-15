@@ -41,6 +41,7 @@ A preliminary model for community science with the Rubin Observatory Legacy Surv
   \addtohist{1}{2021-01-31}{For milestone L3-CE-0020 "Develop a first model for community engagement for DP0.1".}{Melissa Graham}
   \addtohist{1.1}{2023-02-22}{Update name change to Community Science.}{Melissa Graham}
   \addtohist{1.2}{2023-10-31}{Rename User Acceptance Testing to Science Validation of the RSP.}{Andr\'es A. Plazas Malag\'on}
+  \addtohist{1.3}{2025-04-15}{Deduplicate Forum-related content and cite RTN-097.}{Melissa Graham}
 }
 
 \begin{document}
@@ -105,11 +106,9 @@ This model for community science has several guiding principles:
 
 \subsection{Support for Science vs. Technical Assistance}\label{ssec:intro_tech}
 
-All of the components of this model for community science described in \S~\ref{sec:mod} are designed to support scientific endeavors, and not to provide technical support or service access issues.
-For example, technical support issues pertaining to, e.g., account authentication (\textit{``Help, I forget my password"}) or access issues (\textit{``I'm getting a 504 Gateway Timeout when trying to log in to the RSP right now"}) would not be posted to \url{Community.lsst.org} (\S~\ref{ssec:mod_support}) -- a separate, RSP-related venue will be provided for such things.
-Issues related to the scientific applications of the LSST data products, such as \textit{``I'm trying to insert simulated galaxies into images and their measured fluxes look wonky?"}, are the type of question that this model for community science is being designed to serve.
+All of the components of this model for community science described in \S~\ref{sec:mod} are designed to support scientific endeavors.
 
-The CST recognizes that there might be grey areas here, and that people might forget about or not realize the different support resources for the different types of questions; either people will be politely redirected or the question can be passed between teams.
+Technical support and service access issues are also part of user support (e.g., account authentication, lost passwords, gateway timeouts) and while these will always be welcome via the Rubin Community Forum, a separate venue might also be provided (e.g., GitHub Issues).
 
 
 \subsection{Communities}\label{ssec:intro_comms}
@@ -181,12 +180,8 @@ In keeping with the guiding principle (\S~\ref{ssec:intro_strat}) of enabling us
 \subsection{Scalable and Sustainable Support Infrastructure}\label{ssec:mod_support}
 
 During Rubin Observatory operations, the thousands of scientists using the data products and services will have a wide variety of experience, expertise, and science goals.
-It will be impossible for Rubin Observatory staff to answer all individual questions -- more specifically, a Help Desk type of interface for scientific and technical support would be inappropriate and inadequate as it could become a bottleneck.
-
-Instead, the CST is building an online community to provide scientists with the ability to crowd-source solutions from a deep reservoir of collected expertise, and the CST will continue to nurture this community throughout operations.
-
-The open-source Discourse community management platform, used by the construction-era Data Management team to build the Rubin Observatory Community Forum (\url{Community.lsst.org}), will continue to be used to build the Rubin Operations online community.
-Technical maintenance of the forum will continue to be provided by the Data Production team in the operations-era. 
+Since a traditional (closed) Help Desk support interface could become a bottleneck, Rubin Observatory will instead build its user support on the open Discourse platform and maintain the Rubin Community Forum (\url{Community.lsst.org}).
+This platform allows Rubin staff to monitor user support requests while simultaneously building an online community with the ability to crowd-source solutions from a deep reservoir of collected expertise.
 
 The Discourse platform has several advantages, as originally outlined in SQR-011: %\citeds{SQR-001}:
 \begin{itemize}
@@ -198,14 +193,19 @@ The Discourse platform has several advantages, as originally outlined in SQR-011
 \item enables synchronous and asynchronous conversations
 \end{itemize}
 
-Use of the Community Forum for providing support for science to the Rubin community is described in more detail in \citeds{dmtn-155}.
+Guidelines for providing user support with the Rubin Community Forum can be found in RTN-097\footnote{\url{https://rtn-097.lsst.io/}}.
+\begin{itemize}
+\item goals, metrics, and principles of user support
+\item how to respond effectively to user questions
+\item how to provide confidential support
+\item tips for sharing news and announcements
+\item categories for enabling scientific discussion
+\item advice for Science Collaboration chairs
+\item Forum terminology
+\end{itemize}
 
-% Other communication tools, such as Slack, will continue to be used by the CST for \textit{real-time} discussions with Rubin staff; for participation of Rubin community members in virtual or face-to-face meetings and workshops such as the Project and Community Workshop; and for communicating with the Science Collaborations (if that remains one of their preferred methods for communication).
-% However, Slack will not be used as a venue for Q\&A or support for science, as it is neither scalable nor sustainable in the long-term.
 
-The CST recognizes that modes for private Q\&A and issue reporting regarding sensitive scientific topics or proprietary data will also need to be supported.
-The CST is currently looking into how to offer confidential support via the Community Forum.
-As a reminder, a different channel will be provided for technical assistance, such as questions about RSP account services and authentication (\S~\ref{ssec:intro_tech}).
+\subsubsection{Future evolution of the Forum}
 
 The CST recognizes that some of the Discourse functionality (such as account trust levels, badges, and tags) are not yet well understood by forum participants, and that some reorganization of the categories could improve the forum user experience.
 The CST is currently reviewing existing functionality and planning upgrades to this service (and documenting this work with topics in the Meta category).
@@ -213,23 +213,7 @@ The CST will continue to evolve the forum in response to activity trends and fee
 
 \subsubsection{Use of the Forum for scientific discussion}\label{sssec:forum_discussion}
 
-Two high-level categories are available for scientific discussion: the Science and the Science Collaborations categories and their sub-categories. 
-Categories for scientific discussions are not monitored by Rubin staff, and do not have the ``marked solution'' functionality activated.
-Forum users may propose new sub-categories by making a new topic in the Meta category to argue why the sub-category is needed.
-Forum administrators (Rubin staff) review and discuss the proposals for new categories and only admins can create new categories.
-
-{\bf Science Collaborations}:
-Advice for Science Collaboration chairs on best practices for the use of Forum categories and groups associated with their Science Collaboration is provided in the Meta topic on ``How to use the Forum as Science Collaboration chair.'' 
-
-{\bf Time-domain research announcements}:
-Forum users may propose to use the Discourse API in a sub-category to auto-generate new topics for time-domain phenomena.
-This enables the Forum to be used for public, worldwide discussions about time sensitive follow-up. 
-New APIs are first implemented on a year-long trial basis to confirm that the number of auto-generated new topics is on order a few per day or less (any more is too many for human interaction, which means the Forum is the wrong tool).
-Such APIs must be muted from the Forum landing page feed, and it is recommended to restrict access to a group (i.e., users must opt-in to seeing the announcements), but the group itself can be openly joinable.
-
-The primary use of the Forum is Rubin user support (helpdesk functionality), and the secondary use is Rubin news communications.
-The Forum admins (Rubin staff) retain the right to restrict or remove any other functionality, e.g., if it interferes with users' ability obtain support or news.
-
+For best practices related to facilitating scientific discussions, and policies related to time-domain research annoucements, see RTN-097\footnote{\url{https://rtn-097.lsst.io/}}.
 
 \subsubsection{Use of Generative Artificial Intelligence (AI)}\label{sssec:use_ai}
 
